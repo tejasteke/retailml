@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Analytics & ML Prediction Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon"><i class="fa-solid fa-chart-line-up"></i></div>
+                <div class="logo-text">Retail<span>ML</span></div>
+            </div>
+            <nav class="sidebar-menu">
+                <button class="menu-item active" data-tab="overview">
+                    <i class="fa-solid fa-grid-2"></i> <span>Overview</span>
+                </button>
+                <button class="menu-item" data-tab="eda">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i> <span>EDA Journey (Q1-Q7)</span>
+                </button>
+                <button class="menu-item" data-tab="segments">
+                    <i class="fa-solid fa-users-gear"></i> <span>Customer Segments</span>
+                </button>
+                <button class="menu-item" data-tab="predict">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Predictive Simulator</span>
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Retail Sales EDA & ML</p>
+                <small>v1.0.0 • Offline Ready</small>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="content-header">
+                <div class="header-title">
+                    <h1 id="page-title">Dashboard Overview</h1>
+                    <p id="page-subtitle">Real-time metrics, analytics and predictions from the Retail Sales Dataset.</p>
+                </div>
+                <div class="header-actions">
+                    <div class="date-badge"><i class="fa-regular fa-calendar"></i> <span id="dataset-range">Loading...</span></div>
+                </div>
+            </header>
+
+            <!-- TAB 1: OVERVIEW -->
+            <section id="tab-overview" class="tab-content active">
+                <!-- Metrics Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <span class="metric-label">Total Revenue</span>
+                            <h3 class="metric-value" id="stat-revenue">$0.00</h3>
+                        </div>
+                        <div class="metric-icon bg-gradient-purple"><i class="fa-solid fa-wallet"></i></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <span class="metric-label">Total Transactions</span>
+                            <h3 class="metric-value" id="stat-transactions">0</h3>
+                        </div>
+                        <div class="metric-icon bg-gradient-blue"><i class="fa-solid fa-receipt"></i></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <span class="metric-label">Avg Ticket Size</span>
+                            <h3 class="metric-value" id="stat-avg-spend">$0.00</h3>
+                        </div>
+                        <div class="metric-icon bg-gradient-green"><i class="fa-solid fa-basket-shopping"></i></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <span class="metric-label">Avg Customer Age</span>
+                            <h3 class="metric-value" id="stat-avg-age">0</h3>
+                        </div>
+                        <div class="metric-icon bg-gradient-orange"><i class="fa-solid fa-user-clock"></i></div>
+                    </div>
+                </div>
+
+                <!-- Grid Layout for overview charts -->
+                <div class="dashboard-grid">
+                    <div class="grid-card col-2">
+                        <div class="card-header">
+                            <h4>Sales Trends Over Time</h4>
+                            <span class="card-tag">Python Pre-rendered</span>
+                        </div>
+                        <div class="viz-single">
+                            <img src="assets/plots/q2_monthly_sales.png" alt="Monthly Sales Trend" class="seaborn-image">
+                        </div>
+                    </div>
+                    <div class="grid-card">
+                        <div class="card-header">
+                            <h4>Category Breakdown</h4>
+                            <span class="card-tag">Python Pre-rendered</span>
+                        </div>
+                        <div class="viz-single">
+                            <img src="assets/plots/q3_product_share.png" alt="Product Categories Share" class="seaborn-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="grid-card">
+                        <div class="card-header">
+                            <h4>Quick Insights</h4>
+                        </div>
+                        <div class="insights-list">
+                            <div class="insight-item">
+                                <div class="insight-icon"><i class="fa-solid fa-circle-info text-blue"></i></div>
+                                <div class="insight-text">
+                                    <strong>Dataset Size:</strong> 1,000 transactions containing demographics and product pricing.
+                                </div>
+                            </div>
+                            <div class="insight-item">
+                                <div class="insight-icon"><i class="fa-solid fa-chart-line text-purple"></i></div>
+                                <div class="insight-text">
+                                    <strong>Top Category:</strong> Total revenue is split relatively evenly between Electronics, Clothing, and Beauty.
+                                </div>
+                            </div>
+                            <div class="insight-item">
+                                <div class="insight-icon"><i class="fa-solid fa-circle-exclamation text-yellow"></i></div>
+                                <div class="insight-text">
+                                    <strong>Correlation Notice:</strong> Age and spending have a weak correlation (-0.0606). Demographics alone don't dictate purchase scale.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card col-2">
+                        <div class="card-header">
+                            <h4>Customer Demographics Snapshot</h4>
+                            <span class="card-tag">Python Pre-rendered</span>
+                        </div>
+                        <div class="viz-single">
+                            <img src="assets/plots/q1_age_gender_spending.png" alt="Age and Gender Spending" class="seaborn-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: OVERVIEW EDA JOURNEY -->
+            <section id="tab-eda" class="tab-content">
+                <div class="eda-navigation">
+                    <label for="question-select">Select EDA Question to Explore:</label>
+                    <select id="question-select" class="styled-select">
+                        <option value="q1">Q1: Age and Gender Influence on Purchasing</option>
+                        <option value="q2">Q2: Sales Patterns Across Time Periods</option>
+                        <option value="q3">Q3: Product Category Appeal</option>
+                        <option value="q4">Q4: Age, Spending & Category Preferences</option>
+                        <option value="q5">Q5: Adaptation to Seasonal Trends</option>
+                        <option value="q6">Q6: Quantity per Transaction vs Purchasing Behavior</option>
+                        <option value="q7">Q7: Price Distribution Within Categories</option>
+                    </select>
+                </div>
+
+                <div class="eda-card">
+                    <!-- Q1 -->
+                    <div class="eda-question-content active" id="eda-q1">
+                        <h3>How does customer age and gender influence their purchasing behavior?</h3>
+                        <p class="description">We analyzed the mean amount spent across distinct age bins (Under 25, 25-34, 35-44, 45-54, 55-64, 66+) and gender.</p>
+                        
+                        <div class="viz-single">
+                            <img src="assets/plots/q1_age_gender_spending.png" alt="Age and Gender Spending" class="seaborn-image">
+                        </div>
+
+                        <div class="data-insight-box">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Analytical Insight</h4>
+                            <p>Purchasing behavior is remarkably balanced between Male and Female shoppers across all age groups. Average spending remains in the $200–$250 range per transaction across age brackets, indicating a steady, uniform spending behavior regardless of demographics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="eda-question-content" id="eda-q2">
+                        <h3>Are there discernible patterns in sales across different time periods?</h3>
+                        <p class="description">We plot monthly transaction volumes and day-of-week sales averages to identify shopping timing trends.</p>
+
+                        <div class="viz-split">
+                            <div class="viz-pane">
+                                <h5>Monthly Sales Trend</h5>
+                                <img src="assets/plots/q2_monthly_sales.png" alt="Monthly Sales" class="seaborn-image">
+                            </div>
+                            <div class="viz-pane">
+                                <h5>Day of Week Performance</h5>
+                                <img src="assets/plots/q2_dayofweek_sales.png" alt="Day of Week Sales" class="seaborn-image">
+                            </div>
+                        </div>
+
+                        <div class="data-insight-box">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Analytical Insight</h4>
+                            <p>Sales do not show heavy day-of-week skew, suggesting consistent purchase schedules. Monthly aggregates show fluctuations, with peaks representing seasonal demand adjustments.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="eda-question-content" id="eda-q3">
+                        <h3>Which product categories hold the highest appeal among customers?</h3>
+                        <p class="description">Comparison of revenue share, quantity sold, and transaction volumes for Electronics, Clothing, and Beauty products.</p>
+
+                        <div class="viz-single">
+                            <img src="assets/plots/q3_product_share.png" alt="Product Categories Share" class="seaborn-image">
+                        </div>
+
+                        <div class="data-insight-box">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Analytical Insight</h4>
+                            <p>Electronics, Clothing, and Beauty capture roughly equal shares of customer interest (approx. 33% each). Electronics generates a slightly higher average price per transaction, but Clothing and Beauty keep pace in sheer transaction volumes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="eda-question-content" id="eda-q4">
+                        <h3>What are the relationships between age, spending, and product preferences?</h3>
+                        <p class="description">Exploring how age aligns with what customers buy and how much they spend. We examine correlation coefficients and categorical proportions across age groups.</p>
+
+                        <div class="viz-split">
+                            <div class="viz-pane">
+                                <h5>Category Share by Age</h5>
+                                <img src="assets/plots/q4_age_product_pref.png" alt="Age Product Preference" class="seaborn-image">
+                            </div>
+                            <div class="viz-pane">
+                                <h5>Age vs Spending Scatter</h5>
+                                <img src="assets/plots/q4_age_vs_spending_scatter.png" alt="Age vs Spending Scatter" class="seaborn-image">
+                            </div>
+                        </div>
+
+                        <div class="data-insight-box">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Analytical Insight</h4>
+                            <p>The correlation between Age and Total Amount is extremely close to zero (<b>-0.0606</b>), as shown by the flat regression line. Product preferences are also distributed almost equally within each age group—meaning teenagers and seniors buy Electronics, Clothing, and Beauty in near-identical ratios.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="eda-question-content" id="eda-q5">
+                        <h3>How do customers adapt their shopping habits during seasonal trends?</h3>
+                        <p class="description">Analysis of sales by product category across Winter, Spring, Summer, and Autumn. Let's see if season drives demand shifts.</p>
+
+                        <div class="viz-single">
+                            <img src="assets/plots/q5_seasonal_sales.png" alt="Seasonal Sales" class="seaborn-image">
+                        </div>
+
+                        <div class="data-insight-box">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Analytical Insight</h4>
+                            <p>Seasonal behavior does not display the hyper-seasonality typical in localized retail (e.g., heavy winter jackets, summer swimwear), likely due to the generalized product category labels in the dataset. Nevertheless, slight volume shifts occur, providing optimization angles for promotional calendars.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="eda-question-content" id="eda-q6">
+                        <h3>Are there distinct purchasing behaviors based on the number of items bought per transaction?</h3>
+                        <p class="description">Analyzing if customers who buy larger quantities behave differently in terms of price choice or spending patterns.</p>
+
+                        <div class="viz-split">
+                            <div class="viz-pane">
+                                <h5>Avg Spending by Quantity</h5>
+                                <img src="assets/plots/q6_qty_spending.png" alt="Quantity Spending" class="seaborn-image">
+                            </div>
+                            <div class="viz-pane">
+                                <h5>Category Share per Quantity</h5>
+                                <img src="assets/plots/q6_qty_product_share.png" alt="Quantity Product Share" class="seaborn-image">
+                            </div>
+                        </div>
+
+                        <div class="data-insight-box">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Analytical Insight</h4>
+                            <p>Average transaction value climbs linearly with the quantity of items purchased, which makes sense mathematically. However, the price-per-unit remains constant across different quantity groups, showing that bulk purchasing doesn't currently trigger discounts or skew towards cheaper/more expensive items.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q7 -->
+                    <div class="eda-question-content" id="eda-q7">
+                        <h3>What insights can be gleaned from the distribution of product prices within each category?</h3>
+                        <p class="description">We display box plots and violin charts of price distribution to see how price points vary within Electronics, Clothing, and Beauty.</p>
+
+                        <div class="viz-split">
+                            <div class="viz-pane">
+                                <h5>Price Statistics Table</h5>
+                                <div class="table-container">
+                                    <table id="table-q7" class="premium-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Count</th>
+                                                <th>Min Price</th>
+                                                <th>Median (50%)</th>
+                                                <th>Max Price</th>
+                                                <th>Std Dev</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Dynamic values -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="viz-pane">
+                                <h5>Price Distribution Box Plot</h5>
+                                <img src="assets/plots/q7_price_distribution.png" alt="Price distribution" class="seaborn-image">
+                            </div>
+                        </div>
+
+                        <div class="data-insight-box">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Analytical Insight</h4>
+                            <p>Prices range widely from $25 up to $500 across all categories. The distribution is highly uniform—there are equal numbers of cheap, mid-range, and high-end items in Electronics, Beauty, and Clothing. This flat distribution indicates products are simulated uniformly across key prices ($25, $30, $50, $100, $200, $300, $500).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: CUSTOMER SEGMENTS -->
+            <section id="tab-segments" class="tab-content">
+                <div class="split-layout">
+                    <!-- Segment Details -->
+                    <div class="panel-left">
+                        <div class="card-header">
+                            <h3>Unsupervised K-Means Clustering</h3>
+                            <p class="subtitle">Groups 1,000 customers into distinct behaviors based on Age, Spending, and Quantity.</p>
+                        </div>
+
+                        <div class="segment-grid" id="segments-container">
+                            <!-- Dynamic cluster profiles will render here -->
+                        </div>
+
+                        <!-- Real-time cluster matching form -->
+                        <div class="simulator-card mt-2">
+                            <h4><i class="fa-solid fa-circle-nodes"></i> Segment Membership Checker</h4>
+                            <p class="info-text">Input customer attributes to calculate their segment membership based on scaled Euclidean distance to centroids.</p>
+                            <form id="segment-form" class="inline-form">
+                                <div class="form-group">
+                                    <label for="seg-age">Age</label>
+                                    <input type="number" id="seg-age" min="18" max="100" value="35" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="seg-spend">Total Spend ($)</label>
+                                    <input type="number" id="seg-spend" min="5" max="2500" value="150" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="seg-qty">Quantity</label>
+                                    <input type="number" id="seg-qty" min="1" max="10" value="2" required>
+                                </div>
+                                <button type="submit" class="btn-primary">Find Segment</button>
+                            </form>
+
+                            <div class="result-box hidden" id="segment-result">
+                                <div class="result-header">
+                                    <span>Assigned Profile:</span>
+                                    <h4 id="result-segment-name">Value Shoppers</h4>
+                                </div>
+                                <p id="result-segment-desc">Description of profile...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3D Plot Panel -->
+                    <div class="panel-right">
+                        <div class="grid-card h-full">
+                            <div class="card-header">
+                                <h4>Clustering Vector Visualization</h4>
+                                <span class="card-tag">Python Exported 3D</span>
+                            </div>
+                            <div class="plot-box">
+                                <img src="assets/plots/ml_customer_segments.png" alt="Customer segments 3D scatter" class="full-image">
+                            </div>
+                            <div class="mt-2 text-muted small">
+                                <p><i class="fa-solid fa-info-circle"></i> K-Means automatically grouped these patterns. The vertical axis represents quantity, the horizontal represents age, and depth represents total transaction spending.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: PREDICTIVE SIMULATOR -->
+            <section id="tab-predict" class="tab-content">
+                <div class="split-layout">
+                    <!-- Predictor form -->
+                    <div class="panel-left">
+                        <div class="grid-card">
+                            <div class="card-header">
+                                <h3>Real-Time Regression Engine</h3>
+                                <p class="subtitle">Enter customer demographics, products, and a target date. The system will predict purchase quantity and expected spending using our trained Ridge Regression model.</p>
+                            </div>
+                            <form id="predict-form" class="prediction-form">
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <label for="pred-date">Transaction Date</label>
+                                        <input type="date" id="pred-date" value="2026-06-27" required>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="pred-age">Customer Age</label>
+                                        <input type="number" id="pred-age" min="18" max="100" value="30" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <label for="pred-gender">Gender</label>
+                                        <select id="pred-gender" class="styled-select" required>
+                                            <option value="Female">Female</option>
+                                            <option value="Male" selected>Male</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="pred-category">Product Category</label>
+                                        <select id="pred-category" class="styled-select" required>
+                                            <option value="Beauty">Beauty</option>
+                                            <option value="Clothing" selected>Clothing</option>
+                                            <option value="Electronics">Electronics</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn-submit"><i class="fa-solid fa-gears"></i> Calculate Predictions</button>
+                            </form>
+
+                            <!-- Prediction Result Display -->
+                            <div class="outputs-panel mt-3">
+                                <h4>Calculated Expectations</h4>
+                                <div class="outputs-grid">
+                                    <div class="output-badge bg-gradient-purple">
+                                        <span class="label">Predicted Quantity</span>
+                                        <h3 id="pred-output-qty">0.00</h3>
+                                        <small class="unit">Items per sale</small>
+                                    </div>
+                                    <div class="output-badge bg-gradient-blue">
+                                        <span class="label">Expected Total Amount</span>
+                                        <h3 id="pred-output-amt">$0.00</h3>
+                                        <small class="unit">Total transaction ($)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Model Coefficients and explanation -->
+                    <div class="panel-right">
+                        <div class="grid-card h-full">
+                            <div class="card-header">
+                                <h4>Model Parameter Coefficients & Performance</h4>
+                                <span class="card-tag">Ridge Regression Weights</span>
+                            </div>
+                            
+                            <p class="description-small">Below are the mathematical weights calculated during Python training. The model multiplies each feature by its weight and adds the intercept to compute predictions.</p>
+                            
+                            <div class="model-metrics-box mb-2">
+                                <h5>Dataset Fit Summary</h5>
+                                <div class="metrics-row">
+                                    <div class="sub-metric">
+                                        <span class="metric-lbl">Qty Model R²</span>
+                                        <span class="metric-val text-red" id="model-qty-r2">-0.020</span>
+                                    </div>
+                                    <div class="sub-metric">
+                                        <span class="metric-lbl">Qty Mean Error</span>
+                                        <span class="metric-val" id="model-qty-mae">1.03 items</span>
+                                    </div>
+                                    <div class="sub-metric">
+                                        <span class="metric-lbl">Amt Model R²</span>
+                                        <span class="metric-val text-red" id="model-amt-r2">-0.025</span>
+                                    </div>
+                                    <div class="sub-metric">
+                                        <span class="metric-lbl">Amt Mean Error</span>
+                                        <span class="metric-val" id="model-amt-mae">$452.90</span>
+                                    </div>
+                                </div>
+                                <div class="data-science-tip">
+                                    <i class="fa-solid fa-microchip"></i> 
+                                    <span><b>Data Science Note:</b> R² values near 0 or slightly negative confirm that customer purchases in this dataset are highly random/uniform. Demographic traits (Age/Gender) hold minimal predictive influence. However, our regression outputs represent the baseline expectation weights.</span>
+                                </div>
+                            </div>
+
+                            <div class="coefficients-explorer">
+                                <h5>Active Feature Weights</h5>
+                                <div class="weights-list" id="coefficients-list">
+                                    <!-- Dynamic list of weights -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/data/data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

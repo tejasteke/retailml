@@ -1,0 +1,630 @@
+{
+    "q1_age_gender": [
+        {
+            "Gender": "Female",
+            "Age Group": "Under 25",
+            "Total_Spend": 39470,
+            "Avg_Spend": 487.28395061728395,
+            "Total_Qty": 197,
+            "Avg_Qty": 2.432098765432099,
+            "Transaction_Count": 81
+        },
+        {
+            "Gender": "Female",
+            "Age Group": "25-34",
+            "Total_Spend": 55115,
+            "Avg_Spend": 515.0934579439253,
+            "Total_Qty": 287,
+            "Avg_Qty": 2.682242990654206,
+            "Transaction_Count": 107
+        },
+        {
+            "Gender": "Female",
+            "Age Group": "35-44",
+            "Total_Spend": 46735,
+            "Avg_Spend": 436.77570093457945,
+            "Total_Qty": 266,
+            "Avg_Qty": 2.485981308411215,
+            "Transaction_Count": 107
+        },
+        {
+            "Gender": "Female",
+            "Age Group": "45-54",
+            "Total_Spend": 53310,
+            "Avg_Spend": 447.98319327731093,
+            "Total_Qty": 313,
+            "Avg_Qty": 2.630252100840336,
+            "Transaction_Count": 119
+        },
+        {
+            "Gender": "Female",
+            "Age Group": "55-64",
+            "Total_Spend": 38210,
+            "Avg_Spend": 398.0208333333333,
+            "Total_Qty": 235,
+            "Avg_Qty": 2.4479166666666665,
+            "Transaction_Count": 96
+        },
+        {
+            "Gender": "Female",
+            "Age Group": "65+",
+            "Total_Spend": 0,
+            "Avg_Spend": NaN,
+            "Total_Qty": 0,
+            "Avg_Qty": NaN,
+            "Transaction_Count": 0
+        },
+        {
+            "Gender": "Male",
+            "Age Group": "Under 25",
+            "Total_Spend": 45080,
+            "Avg_Spend": 512.2727272727273,
+            "Total_Qty": 215,
+            "Avg_Qty": 2.4431818181818183,
+            "Transaction_Count": 88
+        },
+        {
+            "Gender": "Male",
+            "Age Group": "25-34",
+            "Total_Spend": 43365,
+            "Avg_Spend": 442.5,
+            "Total_Qty": 253,
+            "Avg_Qty": 2.5816326530612246,
+            "Transaction_Count": 98
+        },
+        {
+            "Gender": "Male",
+            "Age Group": "35-44",
+            "Total_Spend": 45135,
+            "Avg_Spend": 475.10526315789474,
+            "Total_Qty": 240,
+            "Avg_Qty": 2.526315789473684,
+            "Transaction_Count": 95
+        },
+        {
+            "Gender": "Male",
+            "Age Group": "45-54",
+            "Total_Spend": 47380,
+            "Avg_Spend": 430.72727272727275,
+            "Total_Qty": 275,
+            "Avg_Qty": 2.5,
+            "Transaction_Count": 110
+        },
+        {
+            "Gender": "Male",
+            "Age Group": "55-64",
+            "Total_Spend": 42200,
+            "Avg_Spend": 426.26262626262627,
+            "Total_Qty": 233,
+            "Avg_Qty": 2.3535353535353534,
+            "Transaction_Count": 99
+        },
+        {
+            "Gender": "Male",
+            "Age Group": "65+",
+            "Total_Spend": 0,
+            "Avg_Spend": NaN,
+            "Total_Qty": 0,
+            "Avg_Qty": NaN,
+            "Transaction_Count": 0
+        }
+    ],
+    "q2_monthly": [
+        {
+            "Year": 2023,
+            "Month": 1,
+            "MonthName": "January",
+            "Total_Sales": 35450,
+            "Transaction_Count": 76,
+            "YearMonth": "2023-01"
+        },
+        {
+            "Year": 2023,
+            "Month": 2,
+            "MonthName": "February",
+            "Total_Sales": 44060,
+            "Transaction_Count": 85,
+            "YearMonth": "2023-02"
+        },
+        {
+            "Year": 2023,
+            "Month": 3,
+            "MonthName": "March",
+            "Total_Sales": 28990,
+            "Transaction_Count": 73,
+            "YearMonth": "2023-03"
+        },
+        {
+            "Year": 2023,
+            "Month": 4,
+            "MonthName": "April",
+            "Total_Sales": 33870,
+            "Transaction_Count": 86,
+            "YearMonth": "2023-04"
+        },
+        {
+            "Year": 2023,
+            "Month": 5,
+            "MonthName": "May",
+            "Total_Sales": 53150,
+            "Transaction_Count": 105,
+            "YearMonth": "2023-05"
+        },
+        {
+            "Year": 2023,
+            "Month": 6,
+            "MonthName": "June",
+            "Total_Sales": 36715,
+            "Transaction_Count": 77,
+            "YearMonth": "2023-06"
+        },
+        {
+            "Year": 2023,
+            "Month": 7,
+            "MonthName": "July",
+            "Total_Sales": 35465,
+            "Transaction_Count": 72,
+            "YearMonth": "2023-07"
+        },
+        {
+            "Year": 2023,
+            "Month": 8,
+            "MonthName": "August",
+            "Total_Sales": 36960,
+            "Transaction_Count": 94,
+            "YearMonth": "2023-08"
+        },
+        {
+            "Year": 2023,
+            "Month": 9,
+            "MonthName": "September",
+            "Total_Sales": 23620,
+            "Transaction_Count": 65,
+            "YearMonth": "2023-09"
+        },
+        {
+            "Year": 2023,
+            "Month": 10,
+            "MonthName": "October",
+            "Total_Sales": 46580,
+            "Transaction_Count": 96,
+            "YearMonth": "2023-10"
+        },
+        {
+            "Year": 2023,
+            "Month": 11,
+            "MonthName": "November",
+            "Total_Sales": 34920,
+            "Transaction_Count": 78,
+            "YearMonth": "2023-11"
+        },
+        {
+            "Year": 2023,
+            "Month": 12,
+            "MonthName": "December",
+            "Total_Sales": 44690,
+            "Transaction_Count": 91,
+            "YearMonth": "2023-12"
+        },
+        {
+            "Year": 2024,
+            "Month": 1,
+            "MonthName": "January",
+            "Total_Sales": 1530,
+            "Transaction_Count": 2,
+            "YearMonth": "2024-01"
+        }
+    ],
+    "q2_dayofweek": [
+        {
+            "DayOfWeekNum": 0,
+            "DayOfWeek": "Monday",
+            "Total_Sales": 70250,
+            "Avg_Sales": 481.16438356164383,
+            "Transaction_Count": 146
+        },
+        {
+            "DayOfWeekNum": 1,
+            "DayOfWeek": "Tuesday",
+            "Total_Sales": 69440,
+            "Avg_Sales": 431.30434782608694,
+            "Transaction_Count": 161
+        },
+        {
+            "DayOfWeekNum": 2,
+            "DayOfWeek": "Wednesday",
+            "Total_Sales": 58770,
+            "Avg_Sales": 422.80575539568343,
+            "Transaction_Count": 139
+        },
+        {
+            "DayOfWeekNum": 3,
+            "DayOfWeek": "Thursday",
+            "Total_Sales": 53835,
+            "Avg_Sales": 437.6829268292683,
+            "Transaction_Count": 123
+        },
+        {
+            "DayOfWeekNum": 4,
+            "DayOfWeek": "Friday",
+            "Total_Sales": 66290,
+            "Avg_Sales": 463.56643356643355,
+            "Transaction_Count": 143
+        },
+        {
+            "DayOfWeekNum": 5,
+            "DayOfWeek": "Saturday",
+            "Total_Sales": 78815,
+            "Avg_Sales": 525.4333333333333,
+            "Transaction_Count": 150
+        },
+        {
+            "DayOfWeekNum": 6,
+            "DayOfWeek": "Sunday",
+            "Total_Sales": 58600,
+            "Avg_Sales": 424.6376811594203,
+            "Transaction_Count": 138
+        }
+    ],
+    "q3_categories": [
+        {
+            "Product Category": "Beauty",
+            "Total_Sales": 143515,
+            "Total_Qty": 771,
+            "Transaction_Count": 307,
+            "Avg_Price_Per_Unit": 184.05537459283389
+        },
+        {
+            "Product Category": "Clothing",
+            "Total_Sales": 155580,
+            "Total_Qty": 894,
+            "Transaction_Count": 351,
+            "Avg_Price_Per_Unit": 174.28774928774928
+        },
+        {
+            "Product Category": "Electronics",
+            "Total_Sales": 156905,
+            "Total_Qty": 849,
+            "Transaction_Count": 342,
+            "Avg_Price_Per_Unit": 181.90058479532163
+        }
+    ],
+    "q4_correlation": {
+        "age_spending_corr": -0.060568023883045656
+    },
+    "q4_pref": [
+        {
+            "Age Group": "Under 25",
+            "Product Category": "Beauty",
+            "Count": 60,
+            "Percentage": 35.50295857988166
+        },
+        {
+            "Age Group": "Under 25",
+            "Product Category": "Clothing",
+            "Count": 51,
+            "Percentage": 30.17751479289941
+        },
+        {
+            "Age Group": "Under 25",
+            "Product Category": "Electronics",
+            "Count": 58,
+            "Percentage": 34.319526627218934
+        },
+        {
+            "Age Group": "25-34",
+            "Product Category": "Beauty",
+            "Count": 67,
+            "Percentage": 32.6829268292683
+        },
+        {
+            "Age Group": "25-34",
+            "Product Category": "Clothing",
+            "Count": 74,
+            "Percentage": 36.09756097560975
+        },
+        {
+            "Age Group": "25-34",
+            "Product Category": "Electronics",
+            "Count": 64,
+            "Percentage": 31.21951219512195
+        },
+        {
+            "Age Group": "35-44",
+            "Product Category": "Beauty",
+            "Count": 54,
+            "Percentage": 26.732673267326735
+        },
+        {
+            "Age Group": "35-44",
+            "Product Category": "Clothing",
+            "Count": 76,
+            "Percentage": 37.62376237623762
+        },
+        {
+            "Age Group": "35-44",
+            "Product Category": "Electronics",
+            "Count": 72,
+            "Percentage": 35.64356435643564
+        },
+        {
+            "Age Group": "45-54",
+            "Product Category": "Beauty",
+            "Count": 71,
+            "Percentage": 31.004366812227076
+        },
+        {
+            "Age Group": "45-54",
+            "Product Category": "Clothing",
+            "Count": 76,
+            "Percentage": 33.18777292576419
+        },
+        {
+            "Age Group": "45-54",
+            "Product Category": "Electronics",
+            "Count": 82,
+            "Percentage": 35.80786026200873
+        },
+        {
+            "Age Group": "55-64",
+            "Product Category": "Beauty",
+            "Count": 55,
+            "Percentage": 28.205128205128204
+        },
+        {
+            "Age Group": "55-64",
+            "Product Category": "Clothing",
+            "Count": 74,
+            "Percentage": 37.94871794871795
+        },
+        {
+            "Age Group": "55-64",
+            "Product Category": "Electronics",
+            "Count": 66,
+            "Percentage": 33.84615384615385
+        },
+        {
+            "Age Group": "65+",
+            "Product Category": "Beauty",
+            "Count": 0,
+            "Percentage": NaN
+        },
+        {
+            "Age Group": "65+",
+            "Product Category": "Clothing",
+            "Count": 0,
+            "Percentage": NaN
+        },
+        {
+            "Age Group": "65+",
+            "Product Category": "Electronics",
+            "Count": 0,
+            "Percentage": NaN
+        }
+    ],
+    "q5_seasonal": [
+        {
+            "Season": "Autumn",
+            "Product Category": "Beauty",
+            "Total_Sales": 31375,
+            "Transaction_Count": 76,
+            "Avg_Spend": 412.82894736842104
+        },
+        {
+            "Season": "Autumn",
+            "Product Category": "Clothing",
+            "Total_Sales": 38490,
+            "Transaction_Count": 76,
+            "Avg_Spend": 506.44736842105266
+        },
+        {
+            "Season": "Autumn",
+            "Product Category": "Electronics",
+            "Total_Sales": 35255,
+            "Transaction_Count": 87,
+            "Avg_Spend": 405.2298850574713
+        },
+        {
+            "Season": "Spring",
+            "Product Category": "Beauty",
+            "Total_Sales": 34900,
+            "Transaction_Count": 78,
+            "Avg_Spend": 447.43589743589746
+        },
+        {
+            "Season": "Spring",
+            "Product Category": "Clothing",
+            "Total_Sales": 46460,
+            "Transaction_Count": 111,
+            "Avg_Spend": 418.55855855855856
+        },
+        {
+            "Season": "Spring",
+            "Product Category": "Electronics",
+            "Total_Sales": 34650,
+            "Transaction_Count": 75,
+            "Avg_Spend": 462.0
+        },
+        {
+            "Season": "Summer",
+            "Product Category": "Beauty",
+            "Total_Sales": 36875,
+            "Transaction_Count": 76,
+            "Avg_Spend": 485.19736842105266
+        },
+        {
+            "Season": "Summer",
+            "Product Category": "Clothing",
+            "Total_Sales": 30875,
+            "Transaction_Count": 79,
+            "Avg_Spend": 390.82278481012656
+        },
+        {
+            "Season": "Summer",
+            "Product Category": "Electronics",
+            "Total_Sales": 41390,
+            "Transaction_Count": 88,
+            "Avg_Spend": 470.34090909090907
+        },
+        {
+            "Season": "Winter",
+            "Product Category": "Beauty",
+            "Total_Sales": 40365,
+            "Transaction_Count": 77,
+            "Avg_Spend": 524.2207792207793
+        },
+        {
+            "Season": "Winter",
+            "Product Category": "Clothing",
+            "Total_Sales": 39755,
+            "Transaction_Count": 85,
+            "Avg_Spend": 467.70588235294116
+        },
+        {
+            "Season": "Winter",
+            "Product Category": "Electronics",
+            "Total_Sales": 45610,
+            "Transaction_Count": 92,
+            "Avg_Spend": 495.7608695652174
+        }
+    ],
+    "q6_qty": [
+        {
+            "Quantity": 1,
+            "Avg_Price_Per_Unit": 177.09486166007906,
+            "Avg_Total_Amount": 177.09486166007906,
+            "Transaction_Count": 253
+        },
+        {
+            "Quantity": 2,
+            "Avg_Price_Per_Unit": 166.76954732510288,
+            "Avg_Total_Amount": 333.53909465020575,
+            "Transaction_Count": 243
+        },
+        {
+            "Quantity": 3,
+            "Avg_Price_Per_Unit": 199.5643153526971,
+            "Avg_Total_Amount": 598.6929460580913,
+            "Transaction_Count": 241
+        },
+        {
+            "Quantity": 4,
+            "Avg_Price_Per_Unit": 176.67300380228136,
+            "Avg_Total_Amount": 706.6920152091254,
+            "Transaction_Count": 263
+        }
+    ],
+    "q6_qty_category": [
+        {
+            "Quantity": 1,
+            "Product Category": "Beauty",
+            "Percentage": 29.249011857707508
+        },
+        {
+            "Quantity": 2,
+            "Product Category": "Beauty",
+            "Percentage": 30.864197530864196
+        },
+        {
+            "Quantity": 3,
+            "Product Category": "Beauty",
+            "Percentage": 35.26970954356847
+        },
+        {
+            "Quantity": 4,
+            "Product Category": "Beauty",
+            "Percentage": 27.756653992395435
+        },
+        {
+            "Quantity": 1,
+            "Product Category": "Clothing",
+            "Percentage": 34.78260869565217
+        },
+        {
+            "Quantity": 2,
+            "Product Category": "Clothing",
+            "Percentage": 32.92181069958848
+        },
+        {
+            "Quantity": 3,
+            "Product Category": "Clothing",
+            "Percentage": 35.684647302904565
+        },
+        {
+            "Quantity": 4,
+            "Product Category": "Clothing",
+            "Percentage": 36.88212927756654
+        },
+        {
+            "Quantity": 1,
+            "Product Category": "Electronics",
+            "Percentage": 35.96837944664031
+        },
+        {
+            "Quantity": 2,
+            "Product Category": "Electronics",
+            "Percentage": 36.21399176954733
+        },
+        {
+            "Quantity": 3,
+            "Product Category": "Electronics",
+            "Percentage": 29.045643153526974
+        },
+        {
+            "Quantity": 4,
+            "Product Category": "Electronics",
+            "Percentage": 35.361216730038024
+        }
+    ],
+    "q7_price_stats": [
+        {
+            "Product Category": "Beauty",
+            "count": 307.0,
+            "mean": 184.05537459283389,
+            "std": 194.92939947540722,
+            "min": 25.0,
+            "25%": 30.0,
+            "50%": 50.0,
+            "75%": 300.0,
+            "max": 500.0
+        },
+        {
+            "Product Category": "Clothing",
+            "count": 351.0,
+            "mean": 174.28774928774928,
+            "std": 186.01706478801452,
+            "min": 25.0,
+            "25%": 30.0,
+            "50%": 50.0,
+            "75%": 300.0,
+            "max": 500.0
+        },
+        {
+            "Product Category": "Electronics",
+            "count": 342.0,
+            "mean": 181.90058479532163,
+            "std": 189.04967321828022,
+            "min": 25.0,
+            "25%": 30.0,
+            "50%": 50.0,
+            "75%": 300.0,
+            "max": 500.0
+        }
+    ],
+    "general_stats": {
+        "total_revenue": 456000.0,
+        "total_transactions": 1000,
+        "average_spend_per_transaction": 456.0,
+        "average_quantity_per_transaction": 2.514,
+        "unique_customers": 1000,
+        "age_range": [
+            18,
+            64
+        ],
+        "avg_age": 41.392,
+        "date_range": [
+            "2023-01-01",
+            "2024-01-01"
+        ]
+    }
+}

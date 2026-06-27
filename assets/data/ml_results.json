@@ -1,0 +1,169 @@
+{
+    "clustering": {
+        "scaler_mean": [
+            41.392,
+            456.0,
+            2.514
+        ],
+        "scaler_scale": [
+            13.674587233258633,
+            559.7175627046198,
+            1.1321678320814454
+        ],
+        "centroids": [
+            [
+                0.7982266892964575,
+                -0.39831421729959293,
+                -0.9252770436585581
+            ],
+            [
+                -1.0649559716080026,
+                -0.4369763424100513,
+                -0.6821721227615424
+            ],
+            [
+                -0.12873668671694713,
+                1.5878309013760166,
+                0.7779207438583237
+            ],
+            [
+                0.23712146460436506,
+                -0.5800329310824679,
+                0.9968224225640359
+            ]
+        ],
+        "cluster_profiles": [
+            {
+                "cluster_id": 0,
+                "name": "Mature Budget Shoppers",
+                "description": "Older customers who purchase single items with lower average unit prices, showing highly budget-conscious behavior.",
+                "avg_age": 52.30742049469964,
+                "avg_spend": 233.05653710247353,
+                "avg_quantity": 1.466431095406361,
+                "size": 283,
+                "percentage": 28.299999999999997
+            },
+            {
+                "cluster_id": 1,
+                "name": "Younger Moderate Shoppers",
+                "description": "Younger customers buying basic items, showing moderate spending habits and transaction sizes.",
+                "avg_age": 26.829166666666666,
+                "avg_spend": 211.4166666666667,
+                "avg_quantity": 1.7416666666666667,
+                "size": 240,
+                "percentage": 24.0
+            },
+            {
+                "cluster_id": 2,
+                "name": "High-Volume Spenders",
+                "description": "Customers who buy multiple items in a single transaction, leading to high transaction totals. Typically high-value customers.",
+                "avg_age": 39.631578947368425,
+                "avg_spend": 1344.7368421052636,
+                "avg_quantity": 3.3947368421052637,
+                "size": 228,
+                "percentage": 22.8
+            },
+            {
+                "cluster_id": 3,
+                "name": "Mature Budget Shoppers",
+                "description": "Older customers who purchase single items with lower average unit prices, showing highly budget-conscious behavior.",
+                "avg_age": 44.63453815261044,
+                "avg_spend": 131.34538152610435,
+                "avg_quantity": 3.642570281124499,
+                "size": 249,
+                "percentage": 24.9
+            }
+        ]
+    },
+    "regression": {
+        "feature_names": [
+            "Age",
+            "Month",
+            "Year",
+            "Gender_Female",
+            "Gender_Male",
+            "Product_Category_Beauty",
+            "Product_Category_Clothing",
+            "Product_Category_Electronics",
+            "DayOfWeek_Monday",
+            "DayOfWeek_Tuesday",
+            "DayOfWeek_Wednesday",
+            "DayOfWeek_Thursday",
+            "DayOfWeek_Friday",
+            "DayOfWeek_Saturday",
+            "DayOfWeek_Sunday"
+        ],
+        "categorical_info": {
+            "Gender": [
+                "Female",
+                "Male"
+            ],
+            "Product_Category": [
+                "Beauty",
+                "Clothing",
+                "Electronics"
+            ],
+            "DayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ]
+        },
+        "quantity_model": {
+            "intercept": 2.5885346998758094,
+            "coefficients": {
+                "Age": -0.0015031742419103964,
+                "Month": -0.0039603223910113896,
+                "Year": 0.0,
+                "Gender_Female": 0.009386257658458222,
+                "Gender_Male": -0.009386257658458162,
+                "Product_Category_Beauty": -0.04808872020226699,
+                "Product_Category_Clothing": 0.04099913046212718,
+                "Product_Category_Electronics": 0.007089589740008173,
+                "DayOfWeek_Monday": 0.11241558895717298,
+                "DayOfWeek_Tuesday": -0.016192841142836978,
+                "DayOfWeek_Wednesday": 0.07584094758502936,
+                "DayOfWeek_Thursday": -0.03214459729476104,
+                "DayOfWeek_Friday": 0.08938033576092946,
+                "DayOfWeek_Saturday": 0.011854926161413783,
+                "DayOfWeek_Sunday": -0.24115436002691532
+            },
+            "r2": -0.02027728553242003,
+            "mae": 1.0321869380454667,
+            "mse": 1.3328902458195535
+        },
+        "total_amount_model": {
+            "intercept": 580.6613994874949,
+            "coefficients": {
+                "Age": -3.1433458677595527,
+                "Month": 0.4499775223506359,
+                "Year": 0.0,
+                "Gender_Female": -8.578000301307569,
+                "Gender_Male": 8.578000301307592,
+                "Product_Category_Beauty": -19.849373648162057,
+                "Product_Category_Clothing": 9.59004992362886,
+                "Product_Category_Electronics": 10.25932372453618,
+                "DayOfWeek_Monday": -4.185376628407977,
+                "DayOfWeek_Tuesday": -2.546529374464584,
+                "DayOfWeek_Wednesday": -4.533678194395239,
+                "DayOfWeek_Thursday": -8.347349207070186,
+                "DayOfWeek_Friday": 33.38796217575675,
+                "DayOfWeek_Saturday": 50.07221445587624,
+                "DayOfWeek_Sunday": -63.84724322729256
+            },
+            "r2": -0.025136002901969823,
+            "mae": 452.9089121023631,
+            "mse": 300087.22920649126
+        },
+        "rf_comparison": {
+            "quantity_r2": -0.034507105156120765,
+            "quantity_mae": 1.024533809784009,
+            "total_amount_r2": -0.008034577727064951,
+            "total_amount_mae": 446.6769270029358
+        }
+    }
+}

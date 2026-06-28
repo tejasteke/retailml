@@ -21,17 +21,17 @@
                 <div class="logo-text">Retail<span>ML</span></div>
             </div>
             <nav class="sidebar-menu">
-                <button class="menu-item active" data-tab="overview">
-                    <i class="fa-solid fa-grid-2"></i> <span>Overview</span>
-                </button>
-                <button class="menu-item" data-tab="eda">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i> <span>EDA Journey (Q1-Q7)</span>
+                <button class="menu-item active" data-tab="predict">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Predictive Simulator</span>
                 </button>
                 <button class="menu-item" data-tab="segments">
                     <i class="fa-solid fa-users-gear"></i> <span>Customer Segments</span>
                 </button>
-                <button class="menu-item" data-tab="predict">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Predictive Simulator</span>
+                <button class="menu-item" data-tab="eda">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i> <span>EDA Journey (Q1-Q7)</span>
+                </button>
+                <button class="menu-item" data-tab="overview">
+                    <i class="fa-solid fa-grid-2"></i> <span>Overview</span>
                 </button>
             </nav>
             <div class="sidebar-footer">
@@ -45,8 +45,8 @@
             <!-- Top Header -->
             <header class="content-header">
                 <div class="header-title">
-                    <h1 id="page-title">Dashboard Overview</h1>
-                    <p id="page-subtitle">Real-time metrics, analytics and predictions from the Retail Sales Dataset.</p>
+                    <h1 id="page-title">Retail Predictive Simulator (ML)</h1>
+                    <p id="page-subtitle">Real-time transaction quantity and purchase volume estimator powered by Ridge Regression.</p>
                 </div>
                 <div class="header-actions">
                     <div class="date-badge"><i class="fa-regular fa-calendar"></i> <span id="dataset-range">Loading...</span></div>
@@ -54,7 +54,7 @@
             </header>
 
             <!-- TAB 1: OVERVIEW -->
-            <section id="tab-overview" class="tab-content active">
+            <section id="tab-overview" class="tab-content">
                 <!-- Metrics Grid -->
                 <div class="metrics-grid">
                     <div class="metric-card">
@@ -377,7 +377,7 @@
             </section>
 
             <!-- TAB 4: PREDICTIVE SIMULATOR -->
-            <section id="tab-predict" class="tab-content">
+            <section id="tab-predict" class="tab-content active">
                 <div class="split-layout">
                     <!-- Predictor form -->
                     <div class="panel-left">

@@ -1,4 +1,4 @@
-# 📊 Retail Sales Analytics & Machine Learning Predictor
+#  Retail Sales Analytics & Machine Learning Predictor
 
 An interactive, premium web dashboard that combines exploratory data analysis (EDA) and machine learning models trained on the retail sales dataset. 
 
@@ -6,7 +6,7 @@ This project is structured specifically to be **GitHub Pages Ready** — the ent
 
 ---
 
-## 🚀 Live Demo & Deployment Guide (GitHub Pages)
+##  Live Demo & Deployment Guide (GitHub Pages)
 
 You can host this interactive dashboard for free on GitHub Pages in **3 simple steps**:
 
@@ -30,7 +30,7 @@ Your interactive dashboard will be live at `https://YOUR_USERNAME.github.io/YOUR
 
 ---
 
-## 💻 Running the Dashboard Locally
+##  Running the Dashboard Locally
 
 To make running this dashboard as simple as possible, we compile all analytical and machine learning data into `assets/data/data.js`. Because the data is loaded directly as a JavaScript module script:
 
@@ -43,7 +43,7 @@ To make running this dashboard as simple as possible, we compile all analytical 
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 ```
 ├── index.html                  # Core HTML dashboard structure
 ├── style.css                   # Modern dark glassmorphic stylesheet
@@ -60,7 +60,7 @@ To make running this dashboard as simple as possible, we compile all analytical 
 
 ---
 
-## 🔎 Insights from the EDA Journey
+##  Insights from the EDA Journey
 
 Here are the key takeaways from our Python-based data analysis answering your 7 questions:
 
@@ -74,7 +74,7 @@ Here are the key takeaways from our Python-based data analysis answering your 7 
 
 ---
 
-## 🤖 Machine Learning Model Explanations
+##  Machine Learning Model Explanations
 
 ### 1. Customer Segmentation (Unsupervised K-Means)
 The model groups shoppers into 4 distinct segments based on transaction history (`Age`, `Total Amount`, `Quantity`):
